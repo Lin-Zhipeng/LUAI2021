@@ -82,30 +82,29 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="masthead m-height" style="background-image: url('images/bgGIF.gif');">
-        <div class="overlay" style="background-color: #212529;opacity: 0.85"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="site-heading m-head">
-                        <h2 style="text-align:center; margin-top:60px; font-weight: bold;">
-                            The 1st Workshop on
-                        </h2>
-                        <h1 style="text-align:center; font-weight: bold; color:#FF9900">
-                            Detecting Objects in Aerial Images
-                        </h1>
-                        <!-- <h2>Detecting Objects in Aerial Images (DOAI)</h2> -->
-                        <h2 style="text-align:center; font-weight: bold; font-style: italic">
-                            in conjunction with IEEE CVPR 2019</span>
-                            <span class="subheading" style="text-align:center; font-weight:bold; font-style: italic">
-                                June 16, 2019, Long Beach, California.
-                        </h2>
-                    </div>
-                </div>
-            </div>
+  <!-- Page Header -->
+  <header class="masthead m-height" style="background-image: url('images/bgGIF.gif');">
+    <div class="overlay" style="background-color: #212529;opacity: 0.85"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading m-head">
+            <h2 style="text-align:center; margin-top:60px; font-weight: bold;">
+              The 1st Workshop on
+            </h2>
+            <h1 style="text-align:center; font-weight: bold; font-size: 38px;color:#FF9900">
+              Learning to Understand Aerial Images
+            </h1>
+            <h2 style="text-align:center; font-weight: bold; font-style: italic">
+              in conjunction with IEEE ICCV 2021</span>
+              <span class="subheading" style="text-align:center; font-weight:bold; font-style: italic">
+                October 11, 2021, Montreal, Canada.  
+            </h2>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
     <!-- Main Content -->
     <div class="container">
@@ -116,34 +115,35 @@
                 </h2>
 
                 <p style="margin:0px;padding:10px">
-                    Object detection in Earth Vision, also known as Earth Observation and Remote Sensing, refers to the problem of localizing
-                    objects of interest (e.g., vehicles, airplanes and buildings) on the earth’s surface and predicting their
-                    corresponding categories. Observing plenty of instances from the overhead view provide a new way to understand
-                    the world. This is a relatively new field, with many new applications waiting to be developed. For movable
-                    categories, such as vehicles, ships, and planes, the orientation estimation is important for tracking.
-                    The majority of computer vision research focuses mostly on images from everyday life. However, the aerial
-                    imagery is a rich and structured source of information, yet, it is less investigated than it should be
-                    deserved. The task of object detection in aerial images is distinguished from the conventional object
-                    detection task in the following respects:
-                    <!-- </p>
-                <p> -->
+                    Earth vision, also known as <i>Earth Observation and Remote Sensing</i>, targets to understand large-scale scenes
+                    on the Earth’s surface with aerial images taken from overhead view, which provides a new way to understand
+                    our physical world and benefits many applications, e.g., urban management and planning, precise agriculture,
+                    emergency rescue and disaster relief. However, in contrast with nature images, aerial images have many distinct
+                    properties in the viewpoint of understanding and model designs.
+
                     <ul style="margin-top:0px;padding-top:0px;padding-bottom:0px;">
                         <li style="margin-top:0px; padding-top:0px;">
-                            The scale variations of object instances in aerial images are considerably huge.
+                            Aerial images are not human centeric while mainly for photogrammetry or measurement. Thus, the
+                            significant visual elements of an aerial scene may distributed uniformly in images, and the compositional
+                            rule, if existing, behind aerial images is largely different from that of nature images.
                         </li>
                         <li>
-                            Many small object instances are densely distributed in aerial images, for example, the ships in a harbor and the vehicles
-                            in a parking lot.
+                            The geometries of aerial images are different from those of nature images. For instance, objects in
+                            aerial images often appear in arbitrary orientations, and the scale variations of object instances in aerial
+                            images are considerably huge. And small objects may densely distributed in aerial images.
                         </li>
                         <li>
-                            Objects in aerial images often appear in arbitrary orientations.
+                            Beside, the spectral bands, focus lengths, depth fields and imaging geometries of aerial images are also
+                            different from those of nature images.         
                         </li>
                     </ul>
                     This workshop organizing on
-                    <a href="http://cvpr2019.thecvf.com/">CVPR'2019</a>, aims to draw attention from a wide range of communities and calls for more future research
-                    and efforts on the problems of object detection in aerial images. The workshop also contains a challenging
-                    on object detection in aerial images that features a new large-scale annotated image database of objects
-                    in aerial images, updated from DOTA-v1.0.
+                    <a href="http://iccv2021.thecvf.com/">ICCV'2021</a>, aim to draw attention from a wide range of communities and call
+                    for more future research and efforts on the problems of object detection, instance segmentation, semantic
+                    segmentation, and change detection in aerial images.
+                    The workshop also contains a competition with 3 tasks (object detection, instance segmentation, semantic segmentation) on this workshop. This competition provides
+                    a new benchmark database for object detection in aerial images (DOTA-v2.0), which is an extension of
+                    DOTA-v1.0.
                 </p>
                 <!-- <p>
                     Through the dataset and the tasks, we aim to draw attention from the a wide range of communities and call for more future
@@ -158,37 +158,37 @@
                     <!--  -->
                     <ul style="margin-top:0px;padding-top:0px">
                         <li style="margin-top:0px; padding-top:0px">
-                            Object detection algorithms for optical (including multispectral and hyperspectral) remote sensing images
+                            Oriented/tiny/crowded object detection in aerial images
                         </li>
 
                         <li>
-                            Object detection algorithms for synthetic aperture radar (SAR) images
+                            Instance segmentation in aerial images
                         </li>
 
                         <li>
-                            Object detection algorithms and implementations for UAV platforms
+                            Semantic segmentation/classification in aerial images
                         </li>
 
                         <li>
-                            Deep learning models for object detection in aerial images
-                        </li>
-                        <!-- <li>
-                            Practical applications of object detection in aerial images
-                        </li> -->
-                        <li>
-                            Feature extraction for object detection in remote sensing images
+                            Change detection/analysis in aerial image sequences
                         </li>
                         <li>
-                            Benchmarks of object detection in remote sensing images
+                            Object tracking in aerial image sequences
                         </li>
                         <li>
-                            Reviews and perspectives of object detection in remote sensing images
+                            Deep models for aerial image understanding
                         </li>
                         <li>
-                            Applications and systems of object detection in remote sensing images
+                            Explainable models for aerial image understanding
                         </li>
                         <li>
-                            Object detection in Lidar point clouds
+                            Weakly-supervised/Unsupervised models for aerial image understanding
+                        </li>
+                        <li>
+                            Benchmarks and datasets for aerial image understanding
+                        </li>
+                        <li>
+                            Reviews and perspectives in Earth vision
                         </li>
                     </ul>
                 </p>
@@ -197,7 +197,7 @@
                     Submissions
                 </h2>
 
-                <p>
+                <!-- <p>
                     Papers will be limited up to 8 pages, including figures and tables, according to the CVPR format (main conference authors’
                     guidelines). One can download the templates at
                     <a href="http://cvpr2019.thecvf.com/files/cvpr2019AuthorKit.tgz">LaTex/Word Templates(tar)</a>
@@ -208,6 +208,14 @@
                     in the workshop. Several papers will be selected as oral representation on the workshop. All the papers
                     should be submitted through
                     <a href="https://cmt3.research.microsoft.com/DOAI2019">CMT website</a>.
+                </p> -->
+                <p>
+                    Papers will be limited to 8 pages excluding references according to the ICCV’2021 format. (main conference authors’
+                    guidelines). One can download the templates at
+                    <a href="http://iccv2021.thecvf.com/sites/default/files/2020-09/iccv2021AuthorKit.zip">LaTex/Word Templates(zip)</a>.
+                    We will assign each paper to at least 3 reviewers with a double-blind policy. 
+                    Papers will be accepted according to relevance, significance, technical novelty. 
+                    and clarity of presentation. Papers will be published in ICCV’2021 workshop proceedings. Several papers will be selected as oral representation on the workshop.
                 </p>
 
             </div>
