@@ -111,8 +111,7 @@
                 <p>
                     We propose four detection tasks. Task1 is to detect instances with oriented bounding boxes. Task2 is to detect instances
                     with horizontal bounding boxes. 
-                    Task3 is to detect instances objects. Task4 is to semantic segmentation. Task 1 and Task 2 are based on DOTA-v2.0. Task3, Task4 are based on iSAID and GID.
-respectively.
+                    Task3 is to detect instances objects. Task4 is to semantic segmentation. Task 1 and Task 2 are based on DOTA-v2.0. Task3, Task4 are based on iSAID and GID，respectively.
                     <!-- The results from task2 are of great practical value.  -->
                     <!-- We recommond you to test your algorithms by way of Task1.  -->
                     You can use the provided train/val data to train and validate your detector. Validation data may also be used for training
@@ -214,6 +213,55 @@ respectively.
                 <p>
                     The evaluation protocol for horizontal bounding boxes follows the PASCAL VOC benchmark, which uses mean Average Precision(
                     <strong>mAP</strong>) as the primary metric.
+                </p>
+
+
+                <h2>
+                    <b>Task3</b> - Instance Segmentation
+                </h2>
+                <p>
+                    The aim of this task is to segment each individual object instance.
+                </p>
+                <h3>
+                    Submission Format
+                </h3>
+                <p>
+                    The submission format and evaluation protocol follow the MS COCO.
+                </p>
+
+                <h3>
+                    Evaluation Protocol
+                </h3>
+                <p>
+                    The evaluation protocol for iSAID is similar to the MS COCO metric. The only
+                    difference is that we increase the maximum number of instances for evaluation from 100 to 1000, since iSAID
+                    can contain 1,000 instances per image.
+                </p>
+
+                <h2>
+                    <b>Task4</b> - Semantic Segmentation
+                </h2>
+                <p>
+                    The aim of this task is to give the semantic category for each pixel in aerial images.
+                </p>
+                <h3>
+                    Submission Format
+                </h3>
+                <p>
+                    Participants will be asked to submit a zip file containing results for all test images. The
+                    by a specific color. For example:
+                    expected format for each image is a prediction image with the same resolution. Each category is represented
+                </p>
+                <div class="alert alert-secondary" role="alert" style="font-size:18px;font-style: italic;font-family:'Times New Roman', Times, serif">
+                    Paddyfield : (R : 0;G : 200;B : 0)<br>
+                    Urbanresidential : (R : 250;G : 0;B : 150)<br>
+                </div>
+
+                <h3>
+                    Evaluation Protocol
+                </h3>
+                <p>
+                    The evaluation protocol adopts the Kappa coefficient.
                 </p>
 
 
