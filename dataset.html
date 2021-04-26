@@ -106,55 +106,36 @@
         <div class="row">
             <div class="col-lg-10 col-md-10 mx-auto">
                 <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
-                    Overview of DOTA-v1.5
+                    Object detection
                 </h2>
-
-
                 <p style="text-align:justify">
                     <!-- DOTA-v1.5 is an updated version of <a href="https://captain-whu.github.io/DOTA">DOTA-v1.0</a>. Both of them use the 
                     same aerial images but DOTA-v1.5 has revised and updated the annotation of objects, where many small object instances about or below 10 pixels 
                     that were missed in DOTA-v1.0 have been additionally annotated. The categories of DOTA-v1.5 is also extended. -->
-                    DOTA-v1.5 contains 0.4 million annotated object instances within 16 categories, which is an updated version of DOTA-v1.0.
-                    Both of them use the same aerial images but DOTA-v1.5 has revised and updated the annotation of objects,
-                    where many small object instances about or below 10 pixels that were missed in DOTA-v1.0 have been additionally
-                    annotated. The categories of DOTA-v1.5 is also extended. Concretely, the category of
-                    <strong style="font-style:italic">container crane</strong>
-                    <!-- ,<strong style="font-style:italic">tractor</strong>  -->
-                    is added.
-                    <!-- The<strong style="font-style: italic">large vehicle</strong> is split into
-                    <strong style="font-style:italic">bus</strong> and
-                    <strong style="font-style:italic">truck</strong>. The
-                    <strong style="font-style:italic">ship</strong> is split into
-                    <strong style="font-style:italic">large ship</strong> and
-                    <strong style="font-style:italic">small ship</strong>. -->
-                    <!-- DOTA-v1.5 is an updated version of DOTA-v1.0. Both of them use the same aerial images but DOTA-v1.5 has revised and updated 
-                    the annotation of objects, where many small object instances about or below 10 pixels that were missed in DOTA-v1.0 have 
-                    been additionally annotated. The categories of DOTA-v1.5 is also extended. Concretely, the categories of 
-                    <strong style="font-style:italic">container crane</strong>, <strong style="font-style:italic">tractor</strong> are added.
-                     The <strong style="font-style: italic">large vehicle</strong> is split into
-                    <strong style="font-style:italic">bus</strong> and <strong style="font-style:italic">truck</strong>.
-                    The <strong style="font-style:italic">ship</strong> is split into
-                    <strong style="font-style:italic">large ship</strong> and <strong style="font-style:italic">small ship</strong>.
-                    The DOTA-v1.5 has 19 categories and 40k instances in total. -->
-                </p>
+                    Object detection track is based on <a href="https://captain-whu.github.io/DOTA/dataset.html">DOTA-v2.0</a>. DOTA-v2.0 collects more Google Earth, GF-
+                    2 Satellite, and aerial images. There are 18 common categories, 11,268 images and 1,793,658 instances in
+                    DOTA-v2.0. Compared to DOTA-v1.5, it further adds the new categories of ”airport” and ”helipad”. The 11,268
+                    images of DOTA are split into training, validation, test-dev, and test-challenge sets. To avoid the problem
+                    of overfitting, the proportion of the training and validation set is smaller than the test set. Furthermore, we
+                    have two test sets, namely test-dev and test-challenge. Training contains 1,830 images and 268,627 instances.
+                    Validation contains 593 images and 81,048 instances. We released the images and ground truths for training
+                    and validation sets. Test-dev contains 2,792 images and 353,346 instances. We released the images but not the
+                    ground truths. Test-challenge contains 6,053 images and 1,090,637 instances. The images and ground truths
+                    of the test-challenge will be available only during the challenge.
+                <!-- </p> -->
 
-                <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
+                <!-- <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
                     Image Source and Usage License
                 </h2>
                 <p style="text-align:justify;">
                     In consistent with DOTA-v.1.0, the images in DOTA-v1.5 are mainly collected from the Google Earth, satellite JL-1, and satellite
                     GF-2 of the China Centre for Resources Satellite Data and Application.
-                    <!-- <br> -->
-                    <!-- <br> -->
+
                     Use of the images from Google Earth must respect the corresponding terms of use:
                     <a href="https://www.google.com/permissions/geoguidelines.html">"Google Earth" terms of use</a>. All images and their associated annotations in DOTA-v1.5
                     <strong style="color:blue"></strong>can be used for academic purposes only, but any commercial use is prohibited</strong>.
-                    <!-- <br> -->
                 </p>
-                <!-- <p style="text-align:justify;">
-                </p> -->
-                <!-- <p style="text-align:justify;">
-                </p> -->
+
                 <h2>
                     Object Category
                 </h2>
@@ -166,8 +147,9 @@
 
                 <h2>
                     Annotation format
-                </h2>
-                <p style="text-align:justify; padding-bottom: 0px; margin-bottom: 0px;">
+                </h2> -->
+                <!-- <p style="text-align:justify; padding-bottom: 0px; margin-bottom: 0px;"> -->
+                </r>
                     In the dataset, each instance's location is annotated by a quadrilateral bounding boxes, which can be denoted as
                     <strong style="color:blue"> "x
                         <sub>1</sub>, y
@@ -184,9 +166,9 @@
                     arranged in a clockwise order. The following is the Visualization of adopted annotation method. The yellow
                     point represents the
                     <strong style="color:blue">starting point</strong>. which refers to: (a) top left corner of a plane, (b) top left corner of a large
-                    vehicle diamond, (c) the center of sector-shaped baseball.
+                    vehicle diamond, (c) the center of sector-shaped baseball. 
                 </p>
-                <p style="text-align:justify; padding-top:0px; margin-top:10px;">
+                <p>
                     Except the annotation of location, category label is assigned for each instance, which comes from one of the above 15 selected
                     categories, and meanwhile a difficult label is provided which indicates whether the instance is difficult
                     to be detected(1 for difficult, 0 for not difficult). Annotations for an image are saved in a text file
@@ -221,21 +203,15 @@
                     <br> ...
 
                 </div>
-
-                <!-- </blockquote> -->
-
-
                 <div class="container">
                     <img src="images/annotation.png" class="img-rounded" alt="Cinque Terre" width="100%">
                 </div>
 
-                <br>
+                <!-- <br>
                 <h2>
                     Development kit
                 </h2>
-
                 <p>
-                        
                     We have provided <a href="https://github.com/CAPTAIN-WHU/DOTA_devkit">development kit</a> 
                     that includes some useful functions such as visualizing data, 
                     calculating mAP, splitting and merging data.
@@ -262,9 +238,49 @@
                         <a href="https://drive.google.com/drive/folders/1n5w45suVOyaqY84hltJhIZdtVFD9B224?usp=sharing">Validation set</a>,
                         <a href="https://drive.google.com/drive/folders/1mYOf5USMGNcJRPcvRVJVV1uHEalG5RPl?usp=sharing">Testing images</a>
                     </li>
-                    <br>
+                    <br> -->
                     <br>
                 </ul>
+                <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
+                    Instance segmentation
+                </h2>
+                <p style="text-align:justify">
+                    Instance segmentation track is based on <a href="https://captain-whu.github.io/iSAID/">iSAID</a>. Existing Earth Vision datasets are either suitable for semantic
+                    segmentation or object detection. iSAID is the first benchmark dataset for instance segmentation in aerial
+                    images. This large-scale and densely annotated dataset contains 655,451 object instances for 15 categories
+                    across 2,806 high-resolution images. The distinctive characteristics of iSAID are the following: (a) large
+                    number of images with high spatial resolution, (b) fifteen important and commonly occurring categories, (c)
+                    large number of instances per category, (d) large count of labeled instances per image, which might help in
+                    learning contextual information, (e) huge object scale variation, containing small, medium and large objects,
+                    often within the same image, (f) Imbalanced and uneven distribution of objects with varying orientation within
+                    images, depicting real-life aerial conditions, (g) several small size objects, with ambiguous appearance, can
+                    only be resolved with contextual reasoning, (h) precise instance-level annotations carried out by professional
+                    annotators, cross-checked and validated by expert annotators complying with well-defined guidelines. The
+                    annotated examples are shown as following:
+                </p>
+                <div class="container">
+                    <img src="images/iSAID.jpg" class="img-rounded" alt="Cinque Terre" width="100%">
+                </div>
+
+                <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
+                    Semantic Segmentation
+                </h2>
+                <p style="text-align:justify">
+                    Semantic segmentation track is based on <a href="https://x-ytong.github.io/project/GID.html">GID</a>. GID is a large-scale land-cover dataset with Gaofen-2
+                    (GF-2) satellite images. This new dataset, which is named as Gaofen Image Dataset (GID), has superiorities
+                    over the existing land-cover dataset because of its large coverage, wide distribution, and high spatial resolution.
+                    GID consists of two parts: a large-scale classification set and a fine land-cover classification set. The large-scale
+                    classification set contains 150 pixel-level annotated GF-2 images, and the fine classification set is composed
+                    of 30,000 multi-scale image patches coupled with 10 pixel-level annotated GF-2 images. The training and
+                    validation data with 15 categories is collected and re-labeled based on the training and validation images with
+                    5 categories, respectively. The annotated examples are shown as following:
+                </p>
+                <div class="container">
+                    <img src="images/GID.jpg" class="img-rounded" alt="Cinque Terre" width="100%">
+                </div>
+
+
+
             </div>
         </div>
     </div>
