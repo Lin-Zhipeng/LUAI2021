@@ -111,11 +111,11 @@
                 <p>
                     We propose four detection tasks. Task1 is to detect instances with oriented bounding boxes. Task2 is to detect instances
                     with horizontal bounding boxes. 
-                    Task3 is to detect instances objects. Task4 is to semantic segmentation. Task 1 and Task 2 are based on DOTA-v2.0. Task3, Task4 are based on iSAID and GID，respectively.
+                    Task3 is to detect instances objects. Task4 is to detect semantic labels for each pixel. Task 1 and Task 2 are based on DOTA-v2.0. Task3 and Task4 are based on iSAID and GID-15，respectively.
                     <!-- The results from task2 are of great practical value.  -->
                     <!-- We recommond you to test your algorithms by way of Task1.  -->
                     You can use the provided train/val data to train and validate your detector. Validation data may also be used for training
-                    when submitting results on the test set. External datas of any form is allowed. But must be reported
+                    when submitting results on the test set. External data of any form is allowed. But must be reported
                     during submission. Fine-tuning models that are pretrained on ImageNet or COCO are also allowed.
                 </p>
 
@@ -174,7 +174,7 @@
                     Evaluation Protocol
                 </h3>
                 <p>
-                    The evaluation protocol for oriented bounding box is a little different from the protocol in the original PASCAL VOC. We
+                    The evaluation protocol for the oriented bounding box is a little different from the protocol in the original PASCAL VOC. We
                     use the intersection over the union area of two polygons(ground truth and prediction) to calculate the
                     IoU. The rest follows the PASCAL VOC.
                 </p>

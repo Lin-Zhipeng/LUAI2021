@@ -150,7 +150,7 @@
                 </h2> -->
                 <!-- <p style="text-align:justify; padding-bottom: 0px; margin-bottom: 0px;"> -->  
                 </r>
-                    In the dataset, each instance's location is annotated by a quadrilateral bounding boxes, which can be denoted as
+                    In the dataset, each instance's location is annotated by a quadrilateral bounding box, which can be denoted as
                     <strong style="color:blue"> "x
                         <sub>1</sub>, y
                         <sub>1</sub>, x
@@ -163,19 +163,19 @@
                     where (x
                     <sub>i</sub>, y
                     <sub>i</sub>) denotes the positions of the oriented bounding boxes' vertices in the image. The vertices are
-                    arranged in a clockwise order. The following is the Visualization of adopted annotation method. The yellow
+                    arranged in clockwise order. The following is the visualization of the adopted annotation method. The yellow
                     point represents the
-                    <strong style="color:blue">starting point</strong>. which refers to: (a) top left corner of a plane, (b) top left corner of a large
+                    <strong style="color:blue">starting point</strong>. Which refers to: (a) the top left corner of a plane, (b) the top left corner of a large
                     vehicle diamond, (c) the center of sector-shaped baseball. 
                 </p>
                 <p>
-                    Except the annotation of location, category label is assigned for each instance, which comes from one of the above 15 selected
-                    categories, and meanwhile a difficult label is provided which indicates whether the instance is difficult
+                    Except for the annotation of location, a category label is assigned for each instance, which comes from one of the above 15 selected
+                    categories, and meanwhile, a difficult label is provided which indicates whether the instance is difficult
                     to be detected(1 for difficult, 0 for not difficult). Annotations for an image are saved in a text file
-                    with the same file name. At the first line, 'imagesource'(from GoogleEarth, GF-2 or JL-1) is given. At
+                    with the same file name. In the first line, 'imagesource'(from GoogleEarth, GF-2 or JL-1) is given. In
                     the second line, ’gsd’(ground sample distance, the physical size of one image pixel, in meters) is given.
-                    <strong style="color:blue">Note if the 'gsd' is missing, it is annotated to be 'null'.</strong> From third line to last line in
-                    annotation text file, annotation for each instance is given. The annotation format is:
+                    <strong style="color:blue">Note if the 'gsd' is missing, it is annotated to be 'null'.</strong> From the third line to the last line in
+                    the annotation text file, the annotation for each instance is given. The annotation format is:
                 </p>
 
                 <div class="alert alert-secondary" role="alert" style="font-size:18px;font-style: italic;font-family:'Times New Roman', Times, serif;
@@ -248,15 +248,15 @@
                     Instance segmentation track is based on <a href="https://captain-whu.github.io/iSAID/">iSAID</a>. Existing Earth Vision datasets are either suitable for semantic
                     segmentation or object detection. iSAID is the first benchmark dataset for instance segmentation in aerial
                     images. This large-scale and densely annotated dataset contains 655,451 object instances for 15 categories
-                    across 2,806 high-resolution images. The distinctive characteristics of iSAID are the following: (a) large
+                    across 2,806 high-resolution images. The distinctive characteristics of iSAID are the following: (a) a large
                     number of images with high spatial resolution, (b) fifteen important and commonly occurring categories, (c)
-                    large number of instances per category, (d) large count of labeled instances per image, which might help in
+                    a large number of instances per category, (d) large count of labeled instances per image, which might help in
                     learning contextual information, (e) huge object scale variation, containing small, medium and large objects,
                     often within the same image, (f) Imbalanced and uneven distribution of objects with varying orientation within
                     images, depicting real-life aerial conditions, (g) several small size objects, with ambiguous appearance, can
                     only be resolved with contextual reasoning, (h) precise instance-level annotations carried out by professional
                     annotators, cross-checked and validated by expert annotators complying with well-defined guidelines. The
-                    annotated examples are shown as following:
+                    annotated examples are shown as follows:
                 </p>
                 <div class="container">
                     <img src="images/iSAID.jpg" class="img-rounded" alt="Cinque Terre" width="100%">
@@ -273,7 +273,7 @@
                     classification set contains 150 pixel-level annotated GF-2 images, and the fine classification set is composed
                     of 30,000 multi-scale image patches coupled with 10 pixel-level annotated GF-2 images. The training and
                     validation data with 15 categories is collected and re-labeled based on the training and validation images with
-                    5 categories, respectively. The annotated examples are shown as following:
+                    5 categories, respectively. The annotated examples are shown as follows:
                 </p>
                 <div class="container">
                     <img src="images/GID.jpg" class="img-rounded" alt="Cinque Terre" width="100%">
